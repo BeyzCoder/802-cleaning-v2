@@ -1,0 +1,120 @@
+.bubble-left,
+.bubble-right {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    opacity: 0;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+.bubble-left {
+    bottom: 20%;
+    left: 77%;
+    animation: BubbleComeOutRight 2s ease-in-out forwards 1.3s;
+}
+.bubble-right {
+    bottom: 20%;
+    right: 77%;
+    animation: BubbleComeOutLeft 2s ease-in-out forwards 1.3s;
+}
+
+.home-page > h1,
+.home-page > h2,
+.home-page > p {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 9;
+}
+.home-page > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-blue);
+    margin-top: 25px;
+    animation: TextAppear 1s ease-in-out forwards; 
+}
+.home-page > h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-orange);
+    margin-bottom: 50px;
+    animation: TextAppear 1s ease-in-out forwards .5s;
+}
+.home-page > p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-black);
+    width: min(850px, 90%);
+    margin-bottom: 50px;
+    animation: TextAppear 1s ease-in-out forwards .8s; 
+}
+.home-page > p span {
+    font-weight: 600;
+}
+
+.landing-img-contain {
+    flex: 1;
+    width: min(65%, 90%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, .1),
+    -10px -10px 10px #f2f7f7;
+    background-color: #E4EEED;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    animation: BrushAppear 1.5s ease-in-out forwards;
+}
+.landing-img-contain img {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    top: 67%;
+    left: 60%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes BubbleComeOutLeft {
+    from {
+        opacity: 0;
+        transform: translate(300px, 300px);
+    }
+    to {
+        opacity: 0.7;
+        transform: translate(0);
+    }
+}
+@keyframes BubbleComeOutRight {
+    from {
+        opacity: 0;
+        transform: translate(-300px, 300px);
+    }
+    to {
+        opacity: 0.7;
+        transform: translate(0);
+    }
+}
+@keyframes TextAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes BrushAppear {
+    from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

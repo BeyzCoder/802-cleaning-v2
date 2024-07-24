@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+  background-color: var(--color-white);
+}
+
+:root {
+  --color-orange: #E5755D;
+  --color-white: #E4EEED;
+  --color-black: #141414;
+  --color-black-shade: #292929;
+  --color-blue: #085771;
+  --color-blue-shade: #021E26;
+}
