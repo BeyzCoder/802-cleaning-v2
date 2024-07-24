@@ -143,7 +143,7 @@ function App() {
       </section>
       <section  ref={contact}>
         <div className="contact-page">
-
+        
         </div>
       </section>
       <footer>

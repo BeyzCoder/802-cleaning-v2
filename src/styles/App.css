@@ -29,6 +29,8 @@ section {
 .App section:nth-child(2) {
     position: relative;
     z-index: 2;
+    min-height: 80vh;
+    height: auto; 
 }
 .App section:nth-child(3) {
     background: linear-gradient(to right, var(--color-black), var(--color-black-shade));
@@ -36,10 +38,12 @@ section {
     z-index: 800;
     min-height: 80vh; /* Minimum height of 80% of the viewport height */
     height: auto; /* Allow it to grow to the full height of its content */
+    padding: 60px 0;
 }
 .App section:nth-child(4) {
     background: radial-gradient(circle, var(--color-white) 0%, #cacaca 100%);
-    height: 60vh;
+    min-height: 60vh; /* Minimum height of 80% of the viewport height */
+    height: auto; /* Allow it to grow to the full height of its content */
 }
 .App section:nth-child(5) {
     background: linear-gradient(to right, var(--color-blue), var(--color-blue-shade));
@@ -55,7 +59,8 @@ section {
     align-items: center;
     position: relative;
     width: 80%;
-    height: 100%;
+    min-height: 80vh;
+    height: auto;
     overflow: hidden;
 }
 

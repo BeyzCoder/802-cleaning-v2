@@ -6,7 +6,7 @@ const Navbar = ({ tabs }) => {
 
 	const scrollToSection = (elementRef) => {
 		window.scrollTo({
-			top: elementRef.current.offsetTop - 80,
+			top: elementRef.current.offsetTop,
 			behavior: "smooth",
 		})
 	}
