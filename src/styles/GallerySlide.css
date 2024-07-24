@@ -6,7 +6,7 @@
 }
 .gallery-page > h1 {
     text-align: center;
-    width: 40%;
+    width: min(800px, 90%);
     margin: 15px;
     font-size: 2rem;
     font-weight: 800;

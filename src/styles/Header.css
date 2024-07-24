@@ -74,4 +74,7 @@
     .img-contain {
         display: none;
     }
+    .btn-contain button {
+        width: 150px;
+    }
 }

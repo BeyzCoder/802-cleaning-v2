@@ -16,7 +16,7 @@
     text-align: center;
 } 
 .service-page > p {
-    width: 50%;
+    width: min(1000px, 80%);
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;

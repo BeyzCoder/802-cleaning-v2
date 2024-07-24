@@ -9,12 +9,12 @@
 }
 .bubble-left {
     bottom: 20%;
-    left: 77%;
+    left: 70%;
     animation: BubbleComeOutRight 2s ease-in-out forwards 1.3s;
 }
 .bubble-right {
     bottom: 20%;
-    right: 77%;
+    right: 70%;
     animation: BubbleComeOutLeft 2s ease-in-out forwards 1.3s;
 }
 
@@ -55,7 +55,7 @@
 
 .landing-img-contain {
     flex: 1;
-    width: min(65%, 90%);
+    width: 65%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -116,5 +116,25 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .home-page {
+        width: 100%;
+    }
+    .home-page > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+    .home-page > h2 {
+        font-size: 1.5rem;
+    }
+    .home-page > p {
+        font-size: 1rem;
+    }
+    .landing-img-contain {
+        flex: 1;
+        width: 90%;
     }
 }
