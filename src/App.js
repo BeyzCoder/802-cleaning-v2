@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import Navbar from "./components/Navbar";
 import GallerySlide from "./components/GallerySlide";
 import Cards from "./components/Cards";
+import ScrollButton from "./components/ScrollButton";
 
 // Styles
 import "./styles/App.css";
@@ -158,6 +159,7 @@ function App() {
           </div>
         </div>
       </section>
+      <ScrollButton />
       <footer>
         <p>Copyright © 2024 all rights reserved. 802 Window Cleaning Inc.</p>
         <p>Made by Steven Baes.</p>

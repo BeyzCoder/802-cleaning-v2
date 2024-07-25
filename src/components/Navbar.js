@@ -9,6 +9,7 @@ const Navbar = ({ tabs }) => {
 			top: elementRef.current.offsetTop,
 			behavior: "smooth",
 		})
+		sideBarRef.current.style.display = "none";
 	}
 
 	const showSideBar = (event) => {

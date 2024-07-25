@@ -30,6 +30,7 @@ footer {
 }
 footer > p {
     background: linear-gradient(to right, #f5f5f5, #d1eaf2);
+    text-align: center;
     background-clip: text;
     color: transparent;
     font-size: 1.1rem;
@@ -44,6 +45,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
     /* border: 1px solid black; */
 }
 .App section:nth-child(2) {
@@ -56,14 +58,14 @@ section {
     background: linear-gradient(to right, var(--color-black), var(--color-black-shade));
     position: relative;
     z-index: 800;
-    min-height: 80vh; /* Minimum height of 80% of the viewport height */
+    min-height: 65vh; /* Minimum height of 80% of the viewport height */
     height: auto; /* Allow it to grow to the full height of its content */
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .App section:nth-child(4) {
     background: radial-gradient(circle, var(--color-white) 0%, #cacaca 100%);
-    min-height: 60vh; /* Minimum height of 80% of the viewport height */
-    height: auto; /* Allow it to grow to the full height of its content */
+    min-height: 60vh; 
+    height: auto; 
 }
 .App section:nth-child(5) {
     background: linear-gradient(to right, var(--color-blue), var(--color-blue-shade));

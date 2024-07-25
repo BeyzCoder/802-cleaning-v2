@@ -57,9 +57,6 @@
     flex: 1;
     width: 65%;
     height: auto;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, .1),
-    -10px -10px 10px #f2f7f7;
-    background-color: #E4EEED;
     overflow: hidden;
     position: relative;
     z-index: 10;
@@ -69,7 +66,7 @@
 .landing-img-contain img {
     position: absolute;
     transform: translate(-50%, -50%) rotate(-20deg);
-    top: 67%;
+    top: 65%;
     left: 60%;
     width: 100%;
     height: auto;
