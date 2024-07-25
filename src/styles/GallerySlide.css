@@ -10,9 +10,7 @@
     margin: 15px;
     font-size: 2rem;
     font-weight: 800;
-    background: linear-gradient(to right, #E5755D, #e0ae51);
-    background-clip: text;
-    color: transparent;
+    color: var(--color-orange);
 }
 
 .slider-contain {

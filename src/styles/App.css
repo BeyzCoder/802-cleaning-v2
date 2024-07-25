@@ -17,6 +17,26 @@ header > div {
     animation: introAni 1.5s ease-in-out forwards;
 }
 
+footer {
+    background: linear-gradient(to right, var(--color-blue), var(--color-blue-shade));
+    width: 100%;
+    min-height: 30vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > p {
+    background: linear-gradient(to right, #f5f5f5, #d1eaf2);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 section {
     height: 80vh;
     width: 100%;
@@ -38,7 +58,7 @@ section {
     z-index: 800;
     min-height: 80vh; /* Minimum height of 80% of the viewport height */
     height: auto; /* Allow it to grow to the full height of its content */
-    padding: 60px 0;
+    padding: 20px 0;
 }
 .App section:nth-child(4) {
     background: radial-gradient(circle, var(--color-white) 0%, #cacaca 100%);
@@ -47,6 +67,11 @@ section {
 }
 .App section:nth-child(5) {
     background: linear-gradient(to right, var(--color-blue), var(--color-blue-shade));
+    width: 100%;
+    min-height: 80vh; /* Minimum height of 80% of the viewport height */
+    height: auto; /* Allow it to grow to the full height of its content */
+}
+.App section:nth-child(6) {
     width: 100%;
     min-height: 80vh; /* Minimum height of 80% of the viewport height */
     height: auto; /* Allow it to grow to the full height of its content */

@@ -11,6 +11,7 @@ import "./styles/Header.css";
 import "./styles/Home.css";
 import "./styles/About.css";
 import "./styles/Service.css";
+import "./styles/Contact.css";
 
 // Images
 import businessLogo from "./images/business-logo.png";
@@ -143,11 +144,23 @@ function App() {
       </section>
       <section  ref={contact}>
         <div className="contact-page">
-        
+          <div className="contact-info">
+            <h2>Our Contact Details</h2>
+            <div className="details">
+              <span>if you have questions you can reach us here.</span>
+              <div><span>Address:</span> 802 Gray Avenue, Saskatoon, SK S7N 2J4</div>
+              <div><span>Email:</span> 802windowcleaning@gmail.com</div>
+              <div><span>Phone#:</span> (306) 315-5880 </div>
+            </div>
+          </div>
+          <div className="google-review">
+            <div className="elfsight-app-d8e862e1-3c01-4400-90bf-bcaa2e2d5f9d" data-elfsight-app-lazy></div>
+          </div>
         </div>
       </section>
       <footer>
-
+        <p>Copyright © 2024 all rights reserved. 802 Window Cleaning Inc.</p>
+        <p>Made by Steven Baes.</p>
       </footer>
     </div>
   );

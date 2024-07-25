@@ -4,7 +4,7 @@ const Cards = ({boxes}) => {
 	return (
 		<div className="boxes-flex">
 			{boxes.map((box, index) => (
-				<div className="box">
+				<div className="box" key={index}>
 					<div className="box-head">
 						<img src={box.icon} alt={index} />
 						<h2>{box.header}</h2>
