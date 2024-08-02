@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 // Components
 import Navbar from "./components/Navbar";
 import GallerySlide from "./components/GallerySlide";
 import Cards from "./components/Cards";
 import ScrollButton from "./components/ScrollButton";
+import CalendarBooking from "./components/CalendarBooking";
 
 // Styles
 import "./styles/App.css";
@@ -75,15 +76,34 @@ function App() {
       desc: "We got long hose for us to clean large houses.", 
       image: hoseImage},
   ]
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <div className="App">
+      {modalIsOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <div className='close-contain'>
+              <button className="modal-close" onClick={closeModal}>Close</button>
+            </div>
+            <CalendarBooking />
+          </div>
+        </div>
+      )}
       <header>
         <div>
           <div className="img-contain"><img src={businessLogo} alt="802-logo"/></div>
           <Navbar tabs={sectionTabs} />
-          <div className="btn-contain"><button>Book Now!</button></div>
-        </div>
+          {/* <div className="btn-contain"><button>Book Now!</button></div> */}
+          <div className="btn-contain"><button onClick={openModal}>Book Now!</button></div></div>
       </header>
       <section ref={home}>
         <div className="home-page">
